@@ -1,0 +1,101 @@
+<div class="flex-container">
+
+  <div class="page-header">
+    <h1>NgCatalyst Examples</h1>
+    <button (click)="onclickfn()">Randomize Data</button>
+  </div>
+
+  <div class="flex-item">
+    <eikos-line-plot [data]="lineDataA" [title]="lineTitle" [colors]="lineColors" [threshold]="threshold"
+      [xAxisLabel]="xAxisLabelDate" [yAxisLabel]="yAxisLabel" [divHeight]="fiftyPct" [divWidth]="hundoPct">
+    </eikos-line-plot>
+  </div>
+
+  <div class="flex-item">
+    <i class="fab fa-accessible-icon"></i>
+    <eikos-bar-chart [data]="barData" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [propID]="barPropID"
+      [colors]="barColors" [title]="barTitle" [xAxisAngle]="axisAngle" [yAxisAngle]="axisAngle" [divHeight]="fiftyPct"
+      [divWidth]="hundoPct" (clickEvent)="clickEventEmit($event)">
+    </eikos-bar-chart>
+  </div>
+
+  <div class="flex-item">
+    <eikos-bar-chart [data]="barDataA" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [colors]="bubbleColors"
+      [title]="barTitle" [yAxisAngle]="axisAngle" [divHeight]="bbcDivHeight" [divWidth]="hundoPct"
+      (clickEvent)="clickEventEmit($event)" [marker]="'0'">
+    </eikos-bar-chart>
+  </div>
+
+  <div class="flex-item">
+    <eikos-bubble-chart [data]="bubbleData" [propID]="bubblePropID" [title]="bubbleTitle" [isTime]="falseVar"
+      [isDate]="falseVar" [themeColors]="bubbleColors" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel"
+      [divHeight]="hundoPct" [divWidth]="hundoPct" (clickEvent)="clickEventEmit($event)"></eikos-bubble-chart>
+  </div>
+
+  <div class="flex-item">
+    <eikos-bubble-chart [data]="bubbleData2" [title]="bubbleTitle" [isTime]="falseVar" [isDate]="falseVar"
+      [themeColors]="bubbleColors" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [divHeight]="bbcDivHeight"
+      [divWidth]="hundoPct" (clickEvent)="clickEventEmit($event)"></eikos-bubble-chart>
+  </div>
+
+  <div class="flex-item">
+    <eikos-heat-map [data]="heatData" [colors]="pieColors" [divHeight]="hundoPct" [divWidth]="hundoPct"
+      (clickEvent)="clickEventEmit($event)"></eikos-heat-map>
+  </div>
+
+  <div class="flex-item">
+    <eikos-heat-map [data]="heatData2" [dataType]="dataType" [colors]="heatColors" [propID]="heatPropID"
+      [xAxisAngle]="xAxisAngle" [divHeight]="bbcDivHeight" [divWidth]="bbcDivWidth"
+      (clickEvent)="clickEventEmit($event)"></eikos-heat-map>
+  </div>
+
+  <div class="flex-item">
+    <eikos-line-plot [data]="lineDataB" [propID]="linePropID" [title]="lineTitle" [type]="lineType"
+      [xAxisLabel]="'foobar'" [yAxisLabel]="yAxisLabel" [divHeight]="bbcDivWidth" [divWidth]="bbcDivWidth"
+      (clickEvent)="clickEventEmit($event)"></eikos-line-plot>
+  </div>
+
+  <div class="flex-item">
+    <eikos-line-plot [data]="lineDataA" [title]="lineTitle" [colors]="lineColors" [threshold]="threshold"
+      [xAxisLabel]="xAxisLabelDate" [yAxisLabel]="yAxisLabel" [divHeight]="fiftyPct" [divWidth]="hundoPct">
+    </eikos-line-plot>
+  </div>
+
+  <div class="flex-item">
+    <eikos-pie-chart [data]="pieData" [donutWidth]="donutWidth" [propID]="piePropID" [colors]="pieColors"
+      [title]="pieTitle" [divHeight]="bbcDivHeight" [divWidth]="bbcDivHeight" (clickEvent)="clickEventEmit($event)">
+    </eikos-pie-chart>
+  </div>
+
+  <div class="flex-item">
+    <eikos-pie-chart [data]="pieData2" [colors]="bubbleColors" [title]="pieTitle" [divHeight]="hundoPct"
+      [divWidth]="hundoPct" (clickEvent)="clickEventEmit($event)"></eikos-pie-chart>
+  </div>
+
+  <div class="flex-item">
+    <eikos-punch-card [data]="punchData" [propID]="punchPropID" [colors]="punchColors" [title]="punchTitle"
+      [axisColors]="axisColor" (clickEvent)="clickEventEmit($event)" [divHeight]="hundoPct" [divWidth]="hundoPct">
+    </eikos-punch-card>
+  </div>
+
+  <div class="flex-item">
+    <eikos-punch-card [data]="punchData2" [colors]="punchColors" [title]="punchTitle" [axisColors]="axisColor"
+      (clickEvent)="clickEventEmit($event)" [divHeight]="hundoPct" [divWidth]="hundoPct"></eikos-punch-card>
+  </div>
+
+  <div class="flex-item">
+    <eikos-sunburst [data]="sunburstData" [propID]="sunburstPropID" [title]="sunburstTitle" [divHeight]="hundoPct"
+      [divWidth]="hundoPct"></eikos-sunburst>
+  </div>
+
+  <div class="flex-item">
+    <eikos-sunburst [data]="sunburstData2" [title]="sunburstTitle" [divHeight]="hundoPct" [divWidth]="hundoPct">
+    </eikos-sunburst>
+  </div>
+
+  <div class="flex-item">
+    <app-eikos-card-list-demo>
+    </app-eikos-card-list-demo>
+  </div>
+
+</div>

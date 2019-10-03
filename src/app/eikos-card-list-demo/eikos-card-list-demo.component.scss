@@ -1,0 +1,115 @@
+.progress-bar {
+  .progress-container {
+    background-color: #f8f9fa;
+    /* rounded box: border-radius = progress-fill border radius */
+    border-radius: 0.25rem;
+    /* filled oval: border-radius = progress-fill height / 2 + padding */
+    // border-radius: .25rem;
+    // padding: .25rem;
+    .progress-fill {
+      background-color: #00a8e8;
+      height: 1.5rem;
+      border-radius: 0.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .progress-label {
+    color: #121212;
+    white-space: nowrap;
+    padding-left: 0.25rem;
+  }
+}
+
+.card-list-demo-container {
+  padding: 1rem;
+  background-color: #121212;
+  color: #9e9e9e;
+  .card-list-demo-content {
+    padding: 1rem;
+    .card-list-card {
+      width: 100%;
+      height: 100%;
+      .card-list-card-shader {
+        padding: 0.5rem;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .status {
+          font-size: 0.75rem;
+        }
+        .order-fill-cell {
+          font-size: 0.75rem;
+        }
+      }
+      .symbol-cell .symbol-status {
+        .symbol {
+          font-weight: 800;
+        }
+        .status {
+          color: #fff;
+        }
+      }
+      .order-fill-cell {
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
+      }
+      .card-list-cell:not(:last-of-type) {
+        margin-bottom: 0.5rem;
+      }
+    }
+    .card-list-item {
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: space-between;
+      font-size: 0.75rem;
+      padding: 0.5rem;
+      .card-list-cell {
+        color: #9e9e9e;
+        flex-grow: 1;
+        flex-basis: 0;
+        text-align: center;
+        min-width: 65px;
+        .label {
+          padding-bottom: 0.5rem;
+        }
+      }
+      .symbol-cell {
+        height: 3rem;
+        border-radius: 0.25rem;
+        background-color: #00a8e8;
+        display: flex;
+        .symbol-status {
+          margin: auto;
+          .symbol {
+            color: #000;
+          }
+          .status {
+            color: #fff;
+          }
+        }
+      }
+      .order-price-cell .label {
+        color: #028090;
+      }
+      .order-quantity-cell .label {
+        color: #00a896;
+      }
+      .fill-quantity-cell .label {
+        color: #02c39a;
+      }
+    }
+  }
+
+  .wide-col {
+    width: 75px;
+  }
+}
