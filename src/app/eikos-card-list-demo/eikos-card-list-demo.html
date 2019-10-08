@@ -36,9 +36,7 @@
                       item.fill_quantity / item.order_quantity | percent
                   }">
                   <div class="progress-label">
-                    <strong>{{
-                      item.fill_quantity / item.order_quantity | percent
-                    }}</strong>
+                    <strong>{{ item.fill_quantity / item.order_quantity | percent }}</strong>
                   </div>
                 </div>
               </div>
@@ -99,7 +97,7 @@
     </eikos-card-list>
   </div>
 
-  <div class="card-list-demo-content"*ngIf="cardView  && !inverseLayout">
+  <div class="card-list-demo-content" *ngIf="cardView  && !inverseLayout">
     <eikos-card-list [items]="items" [title]="'Card List - Card View'" [listHeight]="450" [cardView]="true"
       (itemSelected)="logItemSelected($event)">
       <ng-template let-item="item">
