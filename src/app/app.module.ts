@@ -3,7 +3,6 @@ import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 
 import { NgcatalystModule } from "ngcatalyst";
-import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { EikosCardListDemoComponent } from "./eikos-card-list-demo/eikos-card-list-demo.component";
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -15,7 +14,6 @@ import { MatButtonModule } from "@angular/material/button";
   imports: [
     BrowserModule,
     NgcatalystModule,
-    FontAwesomeModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule
