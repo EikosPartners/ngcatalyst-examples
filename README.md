@@ -1,19 +1,12 @@
-[![npm version](https://badge.fury.io/js/ngcatalyst.svg)](https://badge.fury.io/js/ngcatalyst)
+# NgCatalyst Visualizations Example App
+>App with examples of all the data visualizations available in the [ngCatalyst](https://github.com/EikosPartners/ngCatalyst) package.
 
-# How to use ngcatalyst 
+### Setup
 
-## Check out the test repo
+Clone this repo then run `npm install`. 
 
-`npm install` from root directory 
+Next run `ng serve` and explore the different visualizations available in NgCatalyst. 
 
-`ng serve` 
+Go to [http://localhost:4200](http://localhost:4200) after running the project to see all the visualizations.
 
-check out [http://localhost:4200](http://localhost:4200) to see the visualizations in action
-
-to explore how the various @Input properties behave, modify them in `src/app/app.component.ts`
-
-## Use from npm 
-
-`npm install --save ngcatalyst`
-
-then: go to angular.json, and add `"node_modules/ngcatalyst/lib/styles.css"` to the "styles" array (under "architect": "build")
+You can also experiment with each chart by changing their props in the `app.component.ts` file.
