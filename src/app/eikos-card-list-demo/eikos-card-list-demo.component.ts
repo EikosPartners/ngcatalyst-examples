@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 
 const cardListData = require("../../assets/cardListData.json");
 
@@ -8,6 +8,9 @@ const cardListData = require("../../assets/cardListData.json");
   styleUrls: ["./eikos-card-list-demo.component.scss"]
 })
 export class EikosCardListDemoComponent implements OnInit {
+  @Input() cardView = false;
+  @Input() inverseLayout = false;
+
   data: any[] = cardListData;
   items: any[] = this.data["items"];
   selectedOrders = [];
